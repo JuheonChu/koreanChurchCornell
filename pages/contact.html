@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>연락처 | 코넬 한인 교회</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-brand">
+        <a href="../index.html">
+          <span class="brand-ko">코넬 한인 교회</span>
+          <span class="brand-en">Korean Church at Cornell</span>
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="메뉴 열기" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">홈</a></li>
+        <li><a href="about.html">소개</a></li>
+        <li><a href="worship.html">예배</a></li>
+        <li><a href="events.html">행사</a></li>
+        <li><a href="ministry.html">사역</a></li>
+        <li><a href="contact.html" class="active">연락처</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>연락처</h1>
+      <p>언제든지 연락주세요. 기꺼이 도와드리겠습니다.</p>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <div>
+          <span class="section-label">메시지 보내기</span>
+          <h2 style="margin-bottom:1.5rem;">문의하기</h2>
+
+          <!--
+            To make this form work, sign up at https://formspree.io (free tier available)
+            and replace "YOUR_FORM_ID" with your actual Formspree form ID.
+            Then change the action attribute to: action="https://formspree.io/f/YOUR_FORM_ID"
+            and remove the id="contactForm" to use native Formspree submission.
+          -->
+          <form id="contactForm" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">이름 *</label>
+              <input type="text" id="name" name="name" placeholder="홍길동" required />
+            </div>
+            <div class="form-group">
+              <label for="email">이메일 *</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">제목</label>
+              <select id="subject" name="subject">
+                <option value="">문의 종류를 선택해 주세요</option>
+                <option value="visit">처음 방문 문의</option>
+                <option value="worship">예배 문의</option>
+                <option value="ministry">사역 참여 문의</option>
+                <option value="prayer">기도 요청</option>
+                <option value="other">기타</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">내용 *</label>
+              <textarea id="message" name="message" placeholder="문의 내용을 자유롭게 적어 주세요..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">메시지 보내기</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <span class="section-label">찾아오시는 길</span>
+          <h2 style="margin-bottom:1.5rem;">교회 위치</h2>
+
+          <!-- Replace this block with your Google Maps embed iframe -->
+          <div class="map-placeholder">
+            <span>📍</span>
+            <p>
+              <strong>주일 예배</strong><br />
+              149 Honness Ln, Ithaca, NY 14850
+            </p>
+            <p style="font-size:0.82rem;color:var(--color-text-light);">
+              구글 지도를 여기에 삽입해 주세요
+            </p>
+          </div>
+
+          <div style="margin-top:2rem;">
+            <h3 style="margin-bottom:1rem;">연락 정보</h3>
+            <ul style="display:flex;flex-direction:column;gap:0.75rem;">
+              <li style="display:flex;gap:0.75rem;align-items:flex-start;">
+                <span style="font-size:1.2rem;">⛪</span>
+                <span>
+                  <strong>주일 예배 장소</strong><br />
+                  149 Honness Ln, Ithaca, NY 14850
+                </span>
+              </li>
+              <li style="display:flex;gap:0.75rem;align-items:flex-start;">
+                <span style="font-size:1.2rem;">🎓</span>
+                <span>
+                  <strong>청년부 모임 장소</strong><br />
+                  548 College Ave, Ithaca, NY 14850
+                </span>
+              </li>
+              <li style="display:flex;gap:0.75rem;align-items:center;">
+                <span style="font-size:1.2rem;">✉️</span>
+                <a href="mailto:kcc.cnb@gmail.com">kcc.cnb@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-top:2rem;padding:1.5rem;background:var(--color-bg-alt);border-radius:var(--radius);">
+            <h3 style="margin-bottom:0.75rem;">예배 시간</h3>
+            <ul style="display:flex;flex-direction:column;gap:0.4rem;font-size:0.93rem;color:var(--color-text-light);">
+              <li>🙏 주일 예배: 매주 일요일 오후 1:45</li>
+              <li>🎓 청년부 모임: 매주 금요일 오후 7:30</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>코넬 한인 교회</h4>
+          <p>Korean Church at Cornell</p>
+        </div>
+        <div class="footer-col">
+          <h4>빠른 링크</h4>
+          <ul>
+            <li><a href="../index.html">홈</a></li>
+            <li><a href="about.html">소개</a></li>
+            <li><a href="worship.html">예배</a></li>
+            <li><a href="events.html">행사</a></li>
+            <li><a href="contact.html">연락처</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>예배 시간</h4>
+          <ul>
+            <li>주일 예배: 일요일 오후 1:45</li>
+            <li>청년부: 금요일 오후 7:30</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>연락처</h4>
+          <ul>
+            <li>📍 149 Honness Ln, Ithaca, NY 14850</li>
+            <li>✉️ <a href="mailto:kcc.cnb@gmail.com">kcc.cnb@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 코넬 한인 교회 (Korean Church at Cornell). All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
